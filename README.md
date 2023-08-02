@@ -44,6 +44,7 @@ The project provides a test report for the executed test cases.
 - StepDefinitions: Add test coverage code in this directory.
 - ResourcesTest: Add CSV data files for testing here.
 - configuration: Add API end point and access token
+- runner: Select the feature files to run and and run what is needed
 
 ##License:
 - You are free to use and copy the project for valid and beneficial purposes. The ownership of the work remains with the author.
