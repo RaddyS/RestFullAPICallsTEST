@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="5.278" tests="5" skipped="0" failures="0" errors="0">
+<testcase classname="Delete User" name="Delete a user" time="1.895">
+<system-out><![CDATA[
+Given I have for this Delete call a JSON payload in file <string>...........passed
+When I send a Delete request to <string>....................................passed
+Then the response status code should be expectedStatusCode "204"............passed
+]]></system-out>
+</testcase>
+<testcase classname="GET User" name="Get API call response code" time="0.817">
+<system-out><![CDATA[
+Given I have for this GET call a user id....................................passed
+When I send Get request.....................................................passed
+And the retrieved user has the same id......................................passed
+Then the response status code for this GET call should be expectedStatusCode = "200".passed
+]]></system-out>
+</testcase>
+<testcase classname="GET User" name="" time="0.67">
+<system-out><![CDATA[
+Given I have executed a Get call............................................passed
+When I receive the response body............................................passed
+Then the response should have expected id, name, email, gender, status......passed
+]]></system-out>
+</testcase>
+<testcase classname="User registration" name="Create a new user" time="0.787">
+<system-out><![CDATA[
+Given I have a User registration JSON payload in file <string>..............passed
+When I send a POST request to <string>......................................passed
+Then the response status code should be expectedStatusCode "201"............passed
+]]></system-out>
+</testcase>
+<testcase classname="Edit User" name="PUT to user" time="0.701">
+<system-out><![CDATA[
+Given I have for this PUT call JSON payload in file <string>................passed
+When I send a PUT request to <string>.......................................passed
+Then the response code should be expectedStatusCode = "200".................passed
+]]></system-out>
+</testcase>
+</testsuite>
